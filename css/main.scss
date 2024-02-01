@@ -1,0 +1,135 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+:root {
+    --primary-color: rgb(84, 66, 28);
+}
+
+body {
+    background: #f7f2e7;
+    margin: 0;
+    font-family: 'Dosis';
+}
+
+.navbar img {
+    width: 3%;
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.25em;
+
+        span {
+            color: var(--primary-color);
+            font-family: 'Single Day';
+            font-size: 1.6em;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+a {
+    color: #454544;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.left-col {
+
+    .subhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .primary-cta {
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding:.6em 1.3em;
+        font-size: 1.4em;
+        border-radius: .5em;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .watch-video-cta {
+        display: block;
+        margin-top: 1em;
+    }
+
+    img {
+        width: 5%;
+        margin-right: .5em;
+    }
+}
+
+.hero-img {
+    width: 40%;
+    margin-top: 3em;
+}
+
+section.features-section {
+    background: rgb(125, 108, 80);
+    color: white;
+}
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+
+    li {
+        font-size: 1/1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('../images/checkmark.svg');
+        }
+    }
+
+}
