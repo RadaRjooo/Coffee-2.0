@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee2</title>
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body>
+   
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="#"><span>Coffee </span>Monday </a>
+            <a class="logo" href="#"><span>Coffee </span> <span id="dayOfWeek"></span> </a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
@@ -107,23 +109,8 @@
             </div>
         </div>
      </section>
-
-     <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-     </script>
-     
-   
 </body>
+
+<script src="script/cof.js"></script>
+
 </html>
